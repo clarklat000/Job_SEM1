@@ -4,7 +4,7 @@ import pygame, random
 #
 # Initialize pygame
 pygame.int()
-# TODO: call pygame.init()
+
 
 # Set display window
 # TODO: create a WINDOW_WIDTH variable and assign it a value of 600
@@ -47,7 +47,7 @@ def create_text_and_rect(text, color, background_color, **locations):
 
 
 # TODO: Here is a usage example for the rest of the text and rectangles that you'll create.
-title_text, text_rect = create_text_and_rect("~~Snake~~", GREEN, DARKRED,
+title_text, title_rect = create_text_and_rect("~~Snake~~", GREEN, DARKRED,
                                              center=(WINDOW_WIDTH // 2, WINDOW_HEIGHT // 2))
 
 # TODO: unpack the tuple from create_text_and_rect into a score_text and score_rect variable
