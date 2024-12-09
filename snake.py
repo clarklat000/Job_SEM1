@@ -1,7 +1,9 @@
 # TODO: don't forget to pip install pygame in the terminal.  Else pygame functions won't be recognized.
 import pygame, random
 
+#
 # Initialize pygame
+pygame.int()
 # TODO: call pygame.init()
 
 # Set display window
