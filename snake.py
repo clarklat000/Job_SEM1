@@ -123,8 +123,8 @@ def handle_snake():
     global head_x
     global head_y
     global head_coord
-    body_coords.insert(0, head_coord)
-    body_coords.pop()
+    body_coord.insert(0, head_coord)
+    body_coord.pop()
     head_x += snake_dx
     head_y += snake_dy
     head_coord = (head_x, head_y, SNAKE_SIZE, SNAKE_SIZE)
@@ -157,7 +157,7 @@ def check_game_over():
     global is_paused
     if (head_rect.left < 0 or head_rect.right > WINDOW_WIDTH or
             head_rect.top < 0 or head_rect.bottom > WINDOW_HEIGHT or
-            head_coord in body_coords):
+            head_coord in body_coord):
         display_surface.blit(game_over_text, game_over_rect)
         display_surface.blit(continue_text, continue_rect)
         pygame.display.update()
